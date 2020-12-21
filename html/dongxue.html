@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>最美洞穴</title>
+		<link rel="stylesheet" type="text/css" href="../css/animate.css"/>
+		
+		<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../css/wow.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			
+			body{
+				padding-top: 100px;
+				/*background:url('../img/bj22.jpg');*/
+				background-size:100%;
+			}
+			.nav1{
+				padding-top: 50px;
+			}
+			.img{
+				display: inline-block;
+				width: 380px;
+				height: 250px;
+				border: 2px solid blanchedalmond;
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				border-radius: 20px; 
+			}
+			/*导航部分*/
+			.nav{
+				margin: 10px;
+			}
+			.navbar-default{
+				background-color: #d4dff5;
+				font: "楷体";
+				font-size: 16px;
+			}
+			.navbar-header img{
+				margin-right: 20px;
+				margin-top: 10px;
+				
+			}
+			.navbar-brand{
+				padding-top: 3px;
+				
+			}
+			.navbar-nav>li{
+				margin-left: 40px;
+			}
+			
+			.fa-heart-o:hover:before {
+				color: red;
+			  	content: "\f004";
+			}
+			.navbar-nav>li:hover{
+				color: red;
+			}
+			.bod{
+			     cursor: pointer;
+				 border:0px solid #fff;
+			     border-radius: 0;
+			     color: #ccc;
+			}
+			.bod:hover{
+			    cursor: pointer;
+			    border:0px solid #fff;
+			    border-bottom: 3px solid #ff0000;
+			    border-radius: 0;
+			    color: #000;
+			    font-weight: 400;
+			}
+			/*内容*/
+			.col-sm-6{
+				padding: 0;
+			}
+			.col-sm-12{
+				position: relative;
+			}
+			.col-sm-6 p{
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 380px;
+				height: 250px;
+				background-color: #c5dfb645;
+				padding-top:90px ;/*内边距  内容到盒子之间的距离*/
+				color: #fff;
+				text-align: center;
+				transform: rotateY(90deg);
+				transition: 1s;
+			}
+			.col-sm-6 img{
+				transform: rotateY(0deg);
+				transition: 1s;
+			}
+			.col-sm-6:hover p{
+				transform: rotateY(0deg);
+			}
+			.col-sm-6:hover img{
+				transform: rotateY(90deg);
+			}
+			/*页脚*/
+			.foot{
+				width: 100%;
+				height: 80px;
+				float: left;
+				margin-top: 80px;
+				background-color: rgba(66,74,79,1);
+			}
+			.design-foot{
+				color: #313131;
+				margin: 0 auto;
+				overflow: visible !important;
+				font-size: 14px;
+				text-align: center;
+			}
+			.c-copyright{
+				text-align: center;
+				margin-top: 22px;
+				color: #fff;
+			}
+			.c-copyright p{
+				font-family: "微软雅黑";
+				margin-top: 5px;
+				color: #fff;
+				font-size: 14px;
+			}
+			@media only screen and (min-width: 992px) and (max-width: 1200px) {
+				
+			.nav1{
+				padding-top: 120px;
+			}
+			}
+			@media only screen and (min-width: 768px) and (max-width: 992px) {
+				
+			.nav1{
+				padding-top: 120px;
+			}
+			}
+			@media only screen and (min-width: 100px) and (max-width: 768px) {
+				
+			.nav1{
+				padding-top: 10px;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root">
+			<nav class="navbar navbar-default navbar-fixed-top posi">
+				<div class="container-fluid">
+					<div class="container">	
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#c1">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="#" class="navbar-brand"><img class="img-responsive" src="../img/logo.png" width="50"></a> 
+						</div>
+						<div class="collapse navbar-collapse" id="c1">
+							<ul class="nav navbar-nav posi">
+								<li class="bod"><a href="../index.html"><i class="fa fa-home"></i>首页</a></li>
+								<li class="bod"><a href="guzhen.html"><i class="fa fa-heart-o" ></i> 中国最美六大乡村古镇</a></li>
+								<li class="bod"><a href="shamo.html"><i class="fa fa-heart-o"></i> 中国最美五大沙漠</a></li>
+								<li class="bod"><a href="dongxue.html"><i class="fa fa-heart-o"></i> 中国最美六大洞穴</a></li>
+								<li class="bod"><a href="chengqu.html"><i class="fa fa-heart-o"></i> 中国最美五大城区</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+		<div class="container nav1">
+			<div class="col-sm-12 text-center ">
+				<div class="col-sm-6 wow bounceInLeft" data-wow-duration="2s">
+					<img class="img img-responsive" src="../img/zjd1.jpg" title="梦幻织金洞"/>
+					<p><small>基本介绍</small>金洞地处乌江源流之一的六冲河南岸，属于高位旱溶洞。洞中遍布石笋、石柱、石芽、钟旗等四十多种堆积物，形成千姿百态
+		的岩溶景观。洞道纵横交错，石峰四布，流水、间歇水塘、地下湖错置其间。被誉为“岩溶瑰宝”、“溶洞奇观”。</p>
+				</div>
+				<div class="col-sm-6 wow bounceInRight"  data-wow-duration="2s" data-wow-delay="1s">
+					<img class="img img-responsive" src="../img/dongxue2.jpg" title="多彩芙蓉洞"/>
+					<p>芙蓉洞主洞长2700米，总面积3.7万平方米，其中"辉煌大厅"面积1.1万平方米，最为壮观。洞内钟乳石类型几乎包括世
+		界各类洞穴近30余个种类的沉积特征。其中有宽15米、高21米的石瀑和石幕，光洁如玉的棕桐状石笋，粲然如繁星的卷
+		曲石和石花等，其数量之多、形态之美、质地之洁、分布之广，为国内罕见。</p>
+				</div>
+			</div>
+			
+			<div class="col-sm-12 text-center">
+				<div class="col-sm-6 wow bounceInLeft"  data-wow-duration="2s" data-wow-delay="2s">
+					<img class="img img-responsive" src="../img/hld.jpg" title="全能黄龙洞" />
+					<p>黄龙洞是张家界武陵源风景名胜中著名的溶洞景点，因享有“世界溶洞奇观”“世界自然遗产、首批国家5A级旅游区张家
+		界武陵源的组成部分。2005年被评选为“中国最美的旅游溶洞”。位于湖南省张家界市核心景区武陵源风景名胜区内，距
+		离张家界市城区及张家界荷花机场、张家界火车站、张家界市中心汽车站36公里，距常张高速阳和出口20公里。</p>
+				</div>
+				<div class="col-sm-6 wow bounceInRight"  data-wow-duration="2s" data-wow-delay="3s">
+					<img class="img img-responsive" src="../img/sd1.jpg" title="九曲本溪水洞" />
+					<p>本溪水洞位于辽宁省本溪市东北35公里处，由水洞、温泉寺、汤沟、关门山、铁刹、庙后山6个景区组成，融山、
+		水、洞、泉、湖、古人类文化遗址于一体，沿太子河呈带状分布，总面积200平方公里，是至今发现的世界第一长
+		地下充水溶洞，被赞誉为“钟乳奇峰景万千，轻舟碧水诗画间；钟秀只应仙界有，人间独一此洞天”。
+            </p>
+				</div>
+			</div>
+			
+			<div class="col-sm-12 text-center">
+				<div class="col-sm-6 wow bounceInLeft"  data-wow-duration="2s" data-wow-delay="4s">
+					<img class="img img-responsive" src="../img/dongxue6.jpg" title="雪玉洞" />
+					<p>雪玉洞地处丰都鬼城的长江对岸，位于龙河峡谷险峻陡峭的岩壁之上，是重庆市著名的溶洞型景区，占地15平方公里，
+		景区内珍稀动物（猕猴、野猪、红腹锦鸡等）与成群溶洞、蜿蜒河流、飞泻瀑布、凌空峭壁、悬棺等景点和谐一体，周
+		围地区更拥有悠久的土家风俗，形成了独特的龙河文化。</p>
+				</div>
+				<div class="col-sm-6 wow bounceInRight"  data-wow-duration="2s" data-wow-delay="5s">
+					<img class="img img-responsive" src="../img/tld1.jpg" title="震撼腾龙洞"/>
+					<p>腾龙洞景区由水洞、旱洞、鲤鱼洞、凉风洞、独家寨及三个龙门、化仙坑等景区组成，整个洞穴系统十分庞大复杂，容积总
+		量居世界第一，是中国旅游洞穴的极品，2005年10月被《中国国家地理》杂志评为“中国最美的地方”。腾龙洞以其雄、险、
+		奇、幽、绝的独特魅力驰名中外。</p>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+				<div class="design-foot">
+					<div class="c-copyright">
+						Copyright @ 2019 李女士
+						<br />
+						<p>If you are interesting tourist, please contact me！</p>
+					</div>
+				</div>
+			</div>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el:"#root",
+				data:{
+					
+				}
+			})
+			new WOW().init();
+		</script>
+	</body>
+</html>

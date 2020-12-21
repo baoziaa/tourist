@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>最美沙漠</title>
+		<link rel="stylesheet" type="text/css" href="../css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../css/wow.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			
+			body{
+				padding-top: 50px;
+				/*background:url('../img/bj22.jpg');*/
+				background-size:100%;
+			}
+			.nav1{
+				margin-top:-126px;
+				padding-top: 50px;
+				/*padding-top: 122px;*/
+			}
+			.img{
+				display: inline-block;
+				width: 302px;
+				height: 200px;
+				border: 1px solid blanchedalmond;
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				border-radius: 20px; 
+			}
+			/*导航部分*/
+			.nav{
+				margin: 10px;
+			}
+			.navbar-default{
+				background-color: #d4dff5;
+				font: "楷体";
+				font-size: 16px;
+			}
+			.navbar-header img{
+				margin-right: 20px;
+				margin-top: 10px;
+				
+			}
+			.navbar-brand{
+				padding-top: 3px;
+				
+			}
+			.navbar-nav>li{
+				margin-left: 40px;
+			}
+			
+			.fa-heart-o:hover:before {
+				color: red;
+			  	content: "\f004";
+			}
+			.navbar-nav>li:hover{
+				color: red;
+			}
+			.bod{
+			     cursor: pointer;
+				 border:0px solid #fff;
+			     border-radius: 0;
+			     color: #ccc;
+			}
+			.bod:hover{
+			    cursor: pointer;
+			    border:0px solid #fff;
+			    border-bottom: 3px solid #ff0000;
+			    border-radius: 0;
+			    color: #000;
+			    font-weight: 400;
+			}
+			/*内容*/
+			p{
+				font-family: "楷体";
+				font-style: italic;
+				color: #6495ED;
+			}
+			.roat{
+				width: 302px;
+				height: 200px;
+				margin: auto;
+				padding:20px;
+				color:#84854c82;
+			}
+			#div1 {
+				width: 260px;
+			    background:url(../img/bd2.jpg);
+			    margin: auto;
+			    -moz-border-radius: 75px;
+				-webkit-border-radius: 75px;
+				border-radius: 75px; 
+			    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+			    transition: width 2s, height 2s, transform 2s;
+			}
+			#div2 {
+				width: 260px;
+			   	background:url(../img/tk4.jpg);
+			    margin: auto;
+			    -moz-border-radius: 75px;
+				-webkit-border-radius: 75px;
+				border-radius: 75px; 
+			    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+			    transition: width 2s, height 2s, transform 2s;
+			}
+			#div3 {
+				width: 260px;
+			   	background:url(../img/geb.jpg);
+			    margin: auto;
+			    -moz-border-radius: 75px;
+				-webkit-border-radius: 75px;
+				border-radius: 75px; 
+			    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+			    transition: width 2s, height 2s, transform 2s;
+			}
+			#div4 {
+				width: 260px;
+			   	background:url(../img/yyq1.jpg);
+			    margin: auto;
+			    -moz-border-radius: 75px;
+				-webkit-border-radius: 75px;
+				border-radius: 75px; 
+			    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+			    transition: width 2s, height 2s, transform 2s;
+			}
+			#div5 {
+				width: 260px;
+			   	background:url(../img/spt1.jpg);
+			    margin: auto;
+			    -moz-border-radius: 75px;
+				-webkit-border-radius: 75px;
+				border-radius: 75px; 
+			    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; 
+			    transition: width 2s, height 2s, transform 2s;
+			}
+			#div1:hover {
+			   color: #ffffff;
+			    -webkit-transform: rotate(30deg); 
+			    transform: rotate(30deg);
+			}
+			#div2:hover {
+			   color: #ffffff;
+			    -webkit-transform: rotate(-30deg); 
+			    transform: rotate(-30deg);
+			}
+			#div3:hover {
+			   color: #ffffff;
+			    -webkit-transform: rotate(30deg); 
+			    transform: rotate(30deg);
+			}
+			#div4:hover {
+			   color: #ffffff;
+			    -webkit-transform: rotate(-30deg); 
+			    transform: rotate(-30deg);
+			}
+			#div5:hover {
+			   color: #ffffff;
+			   
+			}
+			/*页脚*/
+			.foot{
+				width: 100%;
+				height: 80px;
+				float: left;
+				margin-top: 80px;
+				background-color: rgba(66,74,79,1);
+			}
+			.design-foot{
+				color: #313131;
+				margin: 0 auto;
+				overflow: visible !important;
+				font-size: 14px;
+				text-align: center;
+			}
+			.c-copyright{
+				text-align: center;
+				margin-top: 22px;
+				color: #fff;
+			}
+			.c-copyright p{
+				font-family: "微软雅黑";
+				margin-top: 5px;
+				color: #fff;
+				font-size: 14px;
+			}
+			 @media only screen and (min-width: 992px) and (max-width:1750px) {
+			 	.nav1{
+				padding-top: 170px;
+				}
+			 }
+			 @media only screen and (min-width: 768px) and (max-width: 992px) {
+			 	.nav1{
+				padding-top: 170px;
+				}
+				#div1,#div2,#div3,#div4,#div5{
+					width: 750px;
+				}
+			 }
+		</style>
+	</head>
+	<body>
+		<div id="root">
+			<nav class="navbar navbar-default navbar-fixed-top posi">
+				<div class="container-fluid">
+					<div class="container">	
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#c1">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="#" class="navbar-brand"><img class="img-responsive" src="../img/logo.png" width="50"></a> 
+						</div>
+						<div class="collapse navbar-collapse" id="c1">
+							<ul class="nav navbar-nav posi">
+								<li class="bod"><a href="../index.html"><i class="fa fa-home"></i>首页</a></li>
+								<li class="bod"><a href="guzhen.html"><i class="fa fa-heart-o" ></i> 中国最美六大乡村古镇</a></li>
+								<li class="bod"><a href="shamo.html"><i class="fa fa-heart-o"></i> 中国最美五大沙漠</a></li>
+								<li class="bod"><a href="dongxue.html"><i class="fa fa-heart-o"></i> 中国最美六大洞穴</a></li>
+								<li class="bod"><a href="chengqu.html"><i class="fa fa-heart-o"></i> 中国最美五大城区</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		
+		<div class="container-fluid nav1">
+			
+			<div class="col-sm-12">
+				<div class="col-sm-2 col-sm-offset-1 wow bounceInDown">
+					<h2><p>巴丹吉林沙漠腹地</p></h2>
+					<div class="roat" id="div1">
+						巴丹吉林沙漠是世界第四大沙漠，是中国第三大沙漠，是内蒙古第一大沙漠，还是世界最高大沙丘所在地，海拔
+						1400－1600米，最高峰7540米。
+					</div>
+				</div>
+				<div class="col-sm-2  col-sm-offset-6 wow bounceInDown" data-wow-delay="0.5s">
+					<h2><p>塔克拉玛干沙漠腹地</p></h2>
+					<div class="roat" id="div2">
+						塔克拉玛干沙漠流动沙丘面积广大， 沙丘高度一般在100-200米，最高达300米左右，沙漠腹地，沙丘类型复杂多样，复合型
+						沙山和沙垄，宛若憩息在大地上的条条巨龙；塔型沙丘群，呈各种 蜂窝状、 羽毛状、 鱼鳞状，变幻莫测。
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12">
+				<div class="col-sm-2 col-sm-offset-3 wow bounceInDown" data-wow-delay="1s">
+					<h2>
+					<p>古尔班通古特沙漠</p></h2>
+					<div class="roat" id="div3">
+						古尔班通古特沙漠在区域构造部位上，处于准噶尔挤压构造坳陷区内。自喜山运动以来，一直缓慢下降接受沉积。
+             			构造活动轻微，地震基本烈度为6度或＜6度，属区域构造稳定区。
+					</div>
+				</div>
+				<div class="col-sm-2  col-sm-offset-2 wow bounceInDown" data-wow-delay="1.5s">
+					<h2><p>鸣沙山 月牙泉</p></h2>
+					<div class="roat" id="div4">
+						鸣沙山月牙泉风景名胜区, 位于甘肃省河西走廊西端的敦煌市。
+						月牙泉，古称沙井，俗名药泉，自汉朝起即为“敦煌八景”之一，得名“月泉晓澈”。
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-12">
+				<div class="col-sm-2 col-sm-offset-5 wow bounceInDown" data-wow-delay="2s">
+					<h2><p>沙坡头</p></h2>
+					<div class="roat" id="div5">
+						沙坡头国家级自然保护区主要保护对象为自然沙漠景观、天然沙生植被、治沙科研成果、野生动物、明代古长城、沙坡
+		鸣钟等人文景观及其自然综合体。
+					</div>
+				</div>
+			</div>
+			<div class="foot">
+				<div class="design-foot">
+					<div class="c-copyright">
+						Copyright @ 2019 李女士
+						<br />
+						<p>If you are interesting tourist, please contact me！</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var vm = new Vue({
+				el:"#root",
+				data:{
+					
+				}
+			})
+			new WOW().init();
+		</script>
+	</body>
+</html>

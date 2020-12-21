@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>六大城区</title>
+		<link rel="stylesheet" type="text/css" href="../icon/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script src="../js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body{
+				padding-top: 50px;
+				/*background:url('../img/bj22.jpg');*/
+				background-size:100%;
+			}
+			.nav-pills{
+				background-color: #d4dff5;
+			}
+			
+			.flex-item {
+			    /*background-color: cornflowerblue;*/
+			    width: 280px;
+			    height: 200px;
+				font-family: "楷体";
+				color: #000000;
+				font-size: 16px;
+			    /*margin: 10px;*/
+			    border: 1px dashed black;
+			}
+			
+			p{text-indent:2em}
+			h3,h4{
+				color: #8B0000;
+				font-style: italic;
+				}
+			.div5{
+				box-shadow: 5px 5px 5px #FFC0CB;
+				margin: 10px;
+				float: left;
+			}
+			.div6{
+				box-shadow: 5px 5px 5px #8B4513;
+				margin: 10px;
+				float: right;
+				}
+				
+			.bj{
+				column-count:4;
+				column-rule-style:outset;
+				column-rule-width: 0.1em;
+				column-rule-color: #8FBC8F;
+				font-family:"仿宋";
+			}
+			.bj h3{color: #6495ED;}
+			
+			#grad1 {
+				
+			    background: linear-gradient(#daa3d859,#e5e69b6b,#00ffff6b,#d4b0e69e); 
+			    margin: auto;
+		    }
+		    
+		    .div1{
+					width:270px;
+					height:150px;
+					background:url(../img/sz5.jpg);
+					background-size: 100%100%;
+					position:relative;
+					animation-name:myfirst;
+					animation-duration:20s;
+					animation-timing-function:linear;/*线性过度*/
+					animation-delay:2s;/*距动画开始时间*/
+					animation-iteration-count:infinite;/*无限循环次数*/
+					animation-direction:alternate;/*动画播放正常与反向交替*/
+					animation-play-state:running;/*运动状态*/
+				
+					-webkit-animation-name:myfirst;
+					-webkit-animation-duration:20s;
+					-webkit-animation-timing-function:linear;
+					-webkit-animation-delay:2s;
+					-webkit-animation-iteration-count:infinite;
+					-webkit-animation-direction:alternate;
+					-webkit-animation-play-state:running;
+				}
+				@-webkit-keyframes myfirst
+				{
+					0%   {background:url(../img/sz.jpg) ;background-size: 100%100%; left:0px; top:0px;}
+					25%  {background:url(../img/sz1.jpg);background-size: 100%100%; left:945px; top:0px;}
+					50%  {background:url(../img/sz2.jpg);background-size: 100%100%; left:945px; top:420px;}
+					75%  {background:url(../img/sz3.jpg);background-size: 100%100%; left:-105px; top:420px;}
+					100% {background:url(../img/sz4.jpg);background-size: 100%100%; left:-105px; top:0px;}
+				}
+				.div2{
+					border:1px  dotted black;
+					width: 780px;	
+					margin: auto;
+				}
+			
+				@media only screen and (min-width: 992px) and (max-width: 1200px) {
+					#a1{
+						position: relative;
+						left: 50px;
+					}
+					.div1{
+						width: 200px;
+						height: 120px;
+					}
+					
+				@-webkit-keyframes myfirst
+					{
+						0%   {background:url(../img/sz.jpg) ;background-size: 100%100%; left:0px; top:0px;}
+						25%  {background:url(../img/sz1.jpg);background-size: 100%100%; left:755px; top:0px;}
+						50%  {background:url(../img/sz2.jpg);background-size: 100%100%; left:755px; top:440px;}
+						75%  {background:url(../img/sz3.jpg);background-size: 100%100%; left:-45px; top:440px;}
+						100% {background:url(../img/sz4.jpg);background-size: 100%100%; left:-45px; top:0px;}
+					}
+					.div2{
+						width: 600px;
+					}
+					.div2 p{
+						font-size: 13px;
+						font-family: "楷体";
+					}
+					
+				}
+				@media only screen and (min-width: 768px) and (max-width: 992px) {
+					#a1{
+						position: relative;
+						left: -15px;
+					}
+					.flex-item {
+					    width: 240px;
+					    height: 200px;
+						font-family: "楷体";
+						color: #000000;
+						font-size: 14px;
+					}
+					img{
+						width: 240px;
+					}
+					.div1{
+						width: 180px;
+						height: 120px;
+					}
+					
+					@-webkit-keyframes myfirst
+						{
+							0%   {background:url(../img/sz.jpg) ;background-size: 100%100%; left:0px; top:0px;}
+							25%  {background:url(../img/sz1.jpg);background-size: 100%100%; left:545px; top:0px;}
+							50%  {background:url(../img/sz2.jpg);background-size: 100%100%; left:545px; top:550px;}
+							75%  {background:url(../img/sz3.jpg);background-size: 100%100%; left:-35px; top:550px;}
+							100% {background:url(../img/sz4.jpg);background-size: 100%100%; left:-35px; top:0px;}
+						}
+					.div2{
+						width: 400px;
+					}
+					.div2 p{
+						font-size: 13px;
+						font-family: "楷体";
+					}
+				}
+				@media only screen and (min-width: 300px) and (max-width: 768px) {
+					#a1{
+						position: relative;
+						left: 20%;
+					}
+					.flex-item {
+					    /*background-color: cornflowerblue;*/
+					    width: 240px;
+					    height: 200px;
+						font-family: "楷体";
+						color: #000000;
+						font-size: 14px;
+					}
+					img{
+						width: 240px;
+					}
+					.div1{
+						width: 250px;
+						height: 120px;
+						margin: 10px auto;
+					}
+					
+					@-webkit-keyframes myfirst
+					{
+						0%   {background:url(../img/sz.jpg) ;background-size: 100%100%;}
+						25%  {background:url(../img/sz1.jpg);background-size: 100%100%; }
+						50%  {background:url(../img/sz2.jpg);background-size: 100%100%; }
+						75%  {background:url(../img/sz3.jpg);background-size: 100%100%; }
+						100% {background:url(../img/sz4.jpg);background-size: 100%100%; }
+					}
+					.div2{
+						width: 250px;
+					}
+					.div2 p{
+						font-size: 10px;
+						font-family: "楷体";
+					}
+				}
+				@media only screen and (min-width: 100px) and (max-width: 300px) {
+					#a1{
+						position: relative;
+						left: 10%;
+					}
+					.flex-item {
+					    /*background-color: cornflowerblue;*/
+					    width: 140px;
+					    height: 220px;
+						font-family: "楷体";
+						color: #000000;
+						font-size: 10px;
+					}
+					img{
+						width: 140px;
+					}
+					.div1{
+						width: 100px;
+						height: 50px;
+						margin: 10px auto;
+					}
+					
+					@-webkit-keyframes myfirst
+					{
+						0%   {background:url(../img/sz.jpg) ;background-size: 100%100%;}
+						25%  {background:url(../img/sz1.jpg);background-size: 100%100%; }
+						50%  {background:url(../img/sz2.jpg);background-size: 100%100%; }
+						75%  {background:url(../img/sz3.jpg);background-size: 100%100%; }
+						100% {background:url(../img/sz4.jpg);background-size: 100%100%; }
+					}
+					.div2{
+						width: 100px;
+					}
+					.div2 p{
+						font-size: 10px;
+						font-family: "楷体";
+					}
+				}
+		</style>
+	</head>
+	<body>
+		<div id="root">
+			<div class="container">
+				
+				<div class="container">
+					<div class="col-sm-10 col-sm-offset-1">
+						<nav>
+							<ul class="nav nav-pills nav-justified">
+								<li class="active">
+									<a href="#a1" data-toggle="tab">厦门鼓浪屿</a>
+								</li>
+								<li>
+									<a href="#a2" data-toggle="tab">澳门历史城区</a>
+								</li>
+								<li>
+									<a href="#a3" data-toggle="tab">北京什沙海地区</a>
+								</li>
+								<li>
+									<a href="#a4" data-toggle="tab">青岛八大关</a>
+								</li>
+								<li>
+									<a href="#a5" data-toggle="tab">苏州老城</a>
+								</li>
+							</ul>
+							<br /><br />
+						</nav>
+					</div>
+				</div>
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="a1">
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="col-sm-4">
+									<img src="../img/gly1.jpg" width="280" height="200" />
+								</div>
+								<div class="col-sm-4">
+									<img src="../img/gly2.jpg" width="280" height="200"/>
+								</div>
+								<div class="col-sm-4">
+									<img src="../img/gly.jpg" width="280" height="200"/>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="flex-item">
+										<strong>鼓浪屿</strong>（英文：Kulangsu） 原名“圆沙洲”，别名“圆洲仔”，南宋时期命“五龙屿”，明朝改称“鼓浪屿”。因岛西南
+										方海滩上有一块两米多高、中有洞穴的礁石，每当涨潮水涌，浪击礁石，声似擂鼓，人们称“鼓浪石”，鼓浪屿因此
+										而得名。因涨潮水涌，浪击礁石，声似擂鼓而得名。
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="flex-item">
+										<strong>鼓浪屿</strong>街道短小，纵横交错，是厦门最大的一个屿。鼓浪屿全
+										岛的绿地覆盖率超过40%，植物种群丰富，各种乔木、灌木、藤木、地被植物共90余科，1000余种。代表景点有：日
+										光岩、菽庄花园、皓月园、毓园、鼓浪石、鼓浪屿钢琴博物馆、郑成功纪念馆、海底世界、天然海滨浴场、海天堂
+										构等。
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="flex-item">
+										<strong>鼓浪屿</strong>风景名胜区获得国家5A级旅游景区、全国重点文物保护单位、中国最美五大城区等荣誉。在波兰当地
+										时间2017年7月8日举行的第41届世界遗产大会上，“鼓浪屿：国际历史社区”被列入世界遗产名录，成为中国第52项
+										世界遗产项目。
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="col-sm-4">
+									<img src="../img/gly4.jpg" width="280" height="200"/>
+								</div>
+								<div class="col-sm-4">
+									<img src="../img/gly5.jpg" width="280" height="200"/>
+								</div>
+								<div class="col-sm-4">
+									<img src="../img/gly3.jpg" width="280" height="200"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="tab-pane fade in" id="a2">
+						<div class="col-sm-12">
+							
+							 <hr>
+							<h3>1.简介</h3>
+							<strong>(英语名) The Historic Centre of Macao</strong>
+							<br />
+							<strong>(法语名) Le centre historique de Macao</strong>
+							
+							<p>
+							<img src="../img/am.jpg" width="300" height="200" class="div5" />
+							从旧城墙遗址下看 哪咤庙与大三巴牌坊澳门历史城区（旧称澳门历史建筑群），是由22座位于 澳门半岛的建筑物和相邻
+							的8块前地所组成的一个旧城区。于2005年7月15日的第29届 世界遗产委员会会议上，澳门历史城区获得21个成员国全体一
+							致通过，正式被列入世界文化遗产名录内。
+							</p>
+							<hr>
+							<h3>2.价值概要</h3>
+							<p>
+							<img src="../img/am1.jpg" width="300" height="200" class="div6" />
+							澳门历史城区或澳门历史古城区（旧称澳门历史建筑群），是由22座位于澳门澳门半岛的建筑物和相邻的8块前地所组成，
+							以旧城区为核心的历史街区。澳门历史城区在第29届联合国教科文组织世界遗产委员会的2005年7月15日会议上，获得21个
+							成员国全体一致通过，中国“澳门历史城区”正式被列入《世界文化遗产名录》，为中国第31处世界遗产。澳门历史城区是
+							中国境内现存年代最古老、规模最大、保存最完整和最集中的东西方风格共存建筑群，当中包括中国最古老的教堂遗址和
+							修道院、最古老的 基督教坟场、最古老的西式炮台建筑群、第一座西式剧院、第一座现代化灯塔和第一所西式大学等。作
+							为欧洲国家在东亚建立的第一个领地，城区见证了澳门四百多年来中华文化与 西方文化互相交流、多元共存的历史。正因
+							为中西文化共融的缘故，城区当中的大部分建筑都具有中西合璧的特色。城区内的建筑大部分到今仍完好地保存或保持着
+							原有的功能。
+							世界遗产委员会对澳门历史城区的评价是「见证了西方宗教文化在中国以至 远东地区的发展，也见证了向西方传播 中国民
+							间宗教的历史渊源。是中国现存最古老的西式建筑遗产，是东西方建筑艺术的综合体现。」 由此可见，澳门历史城区是中
+							国境内接触近代西方器物与文化最早、最多、最重要的地方，同时是近代西方建筑传入中国的第一站。正如澳门特别行政区
+							行政长官 何厚铧在申请成功后发表的即时书面讲话指出：澳门特区从此列入 联合国教科文组织世遗名录，意义重大深远。
+							</p>
+							<hr>
+							<h3>3.具体价值</h3>
+							<h4>历史价值</h4>
+							<p>
+							<img src="../img/am2.jpg" width="300" height="200" class="div5" />
+							澳门历史城区保存了澳门四百多年中西文化交流的历史精髓。它是中国境内现存年代最远、规模最大、保存最完整和最集中，
+							以西式建筑为主、中西式建筑互相辉映的历史城区；是西方宗教文化在中国和远东地区传播历史重要的见证；更是四百多年
+							来中西文化交流互补、多元共存的结晶。
+							</p>
+							<h4>多元交融</h4>
+							<p>
+							<img src="../img/am3.jpg" width="300" height="200" class="div6" />
+							16 世纪中叶，因应中外贸易的新形势，明朝政府划出澳门半岛西南部一片地段，供以葡萄牙人为主的外国商人居住及进行贸
+							易，澳门由此发展成19世纪前中国主要的对外港口，也是亚洲地区重要的国际港口。贸易活动的兴盛吸引了世界各地的人前
+							来，一个融合欧、亚、非、美四洲人民的“华洋杂居”的国际城市由是诞生。 葡萄牙人将这个用城墙围起的城市命名为“ 天主
+							圣名之城”，今天的澳门历史城区就是它的核心部分。
+							
+							四百多年间，在这块城区内，来自葡萄牙、西班牙、荷兰、英国、法国、意大利、美国、日本、 瑞典、印度、马来西亚、 菲
+							律宾、朝鲜甚至非洲地区等等不同地方的人，带著不同的文化思想，不同的职业技艺，不同的风俗习惯，在澳门历史城区内盖
+							房子、建教堂、修 马路、筑炮台以至辟建坟场，展开多姿多彩的生活，包括各类文化活动。在这种机遇下，澳门得风气之先，
+							成为中国境内接触近代西方器物与文化最早、最多、最重要的地方，是当时中国接触西方文化的桥头堡。
+							
+							随著外国人的定居，他们把自己的建筑传统越洋带到澳门，使澳门成为近代西洋建筑传入中国的第一站。尤其是葡萄牙人在澳
+							门的建筑物，无不显露出与葡萄牙本土建筑的密切关系。事实上， 文艺复兴后的一些主要建筑形式、风格，结合亚洲其它地区
+							不同的建筑元素在澳门产生了新的变体，形成独树一帜的建筑风格。
+							</p>
+							<h4>宗教特色</h4>
+							<p>
+							<img src="../img/am4.jpg" width="300" height="200" class="div5" />
+							明末清初，大量 天主教传教士以澳门为传教基地，积极从事远东地区的传教工作，并由此创造出中西文化交流的辉煌篇章。这
+							些传教士来自不同的修会，他们为中国带来了西方近代的科学技术及人文艺术，又向西方介绍了中国的文化成就。而作为基地的
+							澳门，在各修会的努力建设下，开创了许多“中国第一”的事业，如中国第一所西式大学（ 圣保禄学院）、中国第一所西式医院
+							（白马行医院）、中国第一所以西方金属制版和印刷拉丁文字的印刷厂（ 圣保禄学院附属印刷所）、中国第一份外文报纸（《 
+							蜜蜂华报》） ( A Abelha da China) 等等。由耶稣会在澳门开办的圣保禄学院（现已不存）及 圣若瑟修院，为 天主教在远东
+							和中国的传教事业培养了大量人才，同时也培养了大批中国籍的 传教士，为中西文化交流作出卓越的贡献。
+							
+							到19 世纪，随著第一位传教士 马礼逊来到中国大陆， 基督新教也以澳门为基地之一，积极开展传教活动。比如中国第一位新教
+							徒 蔡高就是由马礼逊在澳门为其洗礼；此外，由马礼逊编写的《华英字典》也是在澳门出版。而由新教徒在澳门开办的“ 马礼逊
+							学校”更将近代西式学校教育模式引入中国，培养出 容闳等著名学生，对中国教育的现代化作为贡献。
+						
+						
+							另一方面，澳门民间的 妈祖崇拜，表现了澳门与中国闽粤沿海居民妈祖信仰一脉相承的关系。但是，由于社会和历史环境的特殊
+							性，澳门的妈阁庙在中国众多的 妈祖庙中又别具特色。它既有中国以至海外妈祖崇拜传播和组织的典型特征，又因澳门是近代中
+							国与西方接触最重要的商港，使妈阁庙成为最早向欧洲传播妈祖文化的地方。
+							
+							在四百多年的历史里，中国人与葡萄牙人在澳门历史城区内，合力营造了不同的生活社区。这些生活社区，除了展示澳门的中、
+							西式建筑艺术特色外，更展现了中葡两国人民不同宗教、文化以至生活习惯的交融与尊重。这种中葡人民共同酝酿出来的温情、
+							淳朴、包容的社区气息，是澳门最具特色、最有价值的地方。
+							</p>
+
+							
+						</div>
+					</div>
+					
+					
+					<div class="tab-pane fade in" id="a3">
+						<div class="bj">
+							
+							<div class="col-sm-12">
+								<h2>1.简介</h2>
+								<img class="img-responsive" src="../img/sxh4.jpg" width="240" height="130" />
+							　　 俗话说“先有什刹海，后有北京城”，又被称为“后海”的北京什刹海历来是老北京人休闲娱乐的好去处。因其环境优美，且
+							       民俗风韵十足，两百余年来吸引了众多的官宦、名家甚至方外之人来此或修府第，或建庙宇，更为什刹海增添了深厚的文
+							       化底蕴。
+							
+							 　　现而今，北京的都市味越来越浓了，能看到老北京旧时民风的地方也越来越少了，可就在这什刹海，依然能够听到秋日里
+							 	清脆的虫鸣，依然能能看见老北京四合院建筑群的缩影，依然能够咀嚼京味文化旅游节就要在这里开幕了。“游什刹海，看
+							 	老北京”，品茗、荡舟、游王府、逛胡同，更有那纯正的京腔京韵，使什刹海大放异彩。
+							
+							<h3>宋庆龄故居</h3>
+								<img class="img-responsive" src="../img/sxh1.jpg" width="240" height="130" />
+							　　醇亲王府醇亲王府位于后海北岸，府邸分为正院、住院、花园及马圈四部分。另外在府后建有醇贤亲祠堂一所，占地共约八
+								十余亩。特别是府内的西花园有着相当悠久的历史。国家名誉主席宋庆龄先生故居就建在醇亲王府的西花园，她在这里工作、
+								生活了18年，给这座古色古香的园林留下了许多痕迹，增添了不少亮色。 
+							
+							　　康熙年间，明珠的府邸花园正是坐落于此。园中假山、竹林、小桥错落有致，南楼前临水有“明开夜合”树七株，其中两株二
+								百余年前的古木，据说是明珠长子纳兰性德亲手所植。年轻的纳兰性德常常邀集北京的文人名士相聚于此吟诗填词，今日立
+								身树下，思古之情油然而生，眼前仿佛人影依稀，耳畔边似回响着当年的唱吟之声，“阶前双叶合，枝叶敷华荣”。后来明珠
+								获罪，这府花园又被和坤所占，嘉庆即位后，花园和附近的府邸一起被赐予成亲王，并特许成亲王引后海水入园。现在我们
+								看到的“恩波亭”就是成亲王时修建的，平安石上“岁岁平安”四字便出自成亲王之手。光绪年间，这座府邸又赐给了“光绪”的
+								生父醇亲王，其在成亲王府的基础上添改修缮，建成醇亲王府。 　  今天，醇亲王府已经成为什刹海边的一道风景线，众多
+								的游人慕名前来，只为心中那一份对历史的眷恋和对古迹的景仰。
+							
+							<h3>梅兰芳故居</h3>
+								<img class="img-responsive" src="../img/sxh.jpg" width="240" height="130" />
+							　　梅兰芳先生一生中的最后10年是在什刹海西北隅护国寺街9号度过的，这是一座典型的北京四合院，占地716平方米。如今已
+								成为人们缅怀大师的观光景地。 
+							
+							　　这是一座两进的北京小四合院。共有房屋37间。现有馆藏文件3万余件。正院保存故居原貌，会客厅、书房、卧室和起居室
+								内的各项陈设均按梅兰芳生前生活原状陈列。
+							
+							<h3>郭沫若纪念馆</h3>
+							
+							　　千竿胡同往北大约30来米，前海西街18号，这里便是一代文化名人郭沫若晚年居住过的地方。1963年秋天，郭沫若迁居此处
+								，在什刹海西畔这座古朴的北京四合院里走完了人生最后14个年头。 走进纪念馆，草地上，郭沫若的铜像安坐在藤萝架前，
+								双手轻轻放在膝头、目光平静而坦然。驻足绿荫下，闹市里久违的鸟鸣声，不绝于耳。院内最为显眼的当数郭沫若夫妇亲手
+								种植的银杏和牡丹，那些曾经与主人朝夕相处的一草一木，浸润在主人真诚与博大的情感世界中。人垂花门进四合院，东西
+								两厢已辟为陈列室，以图片和实物展示着诗人、学者兼战士不平凡的一生。正房的客厅、办公室、卧室依旧是主人在世时的
+								陈列。暖郎环绕小小的月季园，通向最北面的房间，正中的一间是郭沫若夫妇研磨书法的地方。伟人已去，故园依旧。一卷
+								卷书稿，一幅幅书法佳作，保留着他的神韵。
+							
+							<h3>广化寺</h3>
+							
+							　　衣冠杂沓，车马骈阗的什刹海，历来是扎根皇城的佛教僧侣弘法结缘的首选之地。皆因梵刹林立，故名什刹海。什刹之一，
+								饱经700年沧桑的佛门古刹广化寺，坐落在鼓楼后西侧后海北岸的鸦儿胡同31号。广化寺坐北朝南，东临银锭桥，西傍宋庆
+								龄故居，占地1.38万平方米，拥有殿宇329间，分中、东、西三大院落。整座寺院建筑严谨，僧房毗连，形成院中有院的建
+								筑特色。寺内古柏苍翠，花草溢香，曲径通幽。广化寺始建于元代，后经明清三次修建，清宣统元年（1909）曾在此筹建京
+								师图书馆，鲁迅先生曾在此任职。1921年8月对外开放。1982年北京佛教协会成立并将会址设在此寺。1986年，北京佛教协
+								会在广化寺西路祖堂内肇建了北京佛教音乐团，弘扬中国传统音乐文化，演奏“京音乐”即佛教音乐，并培养后继者。如 今，
+								广化寺不仅是信徒们礼佛的地方，佛教音乐、礼佛仪式等也已作为一种文化，成为什刹海民俗文化景区的重要组成部分。
+							
+							<h2>2.古刹品禅宗</h2>
+							<h3>汇通祠</h3>
+								<img class="img-responsive" src="../img/sxh2.jpg" width="240" height="130" />
+							　　汇通祠也就是现在的郭守敬纪念馆，位于北京市西城区什刹海西海（积水谭）北沿的汇通河畔。元朝时期，这里水面辽阔，
+								风景秀丽，独特的地理位置使它成为元大都城内、京杭大运河最北码头，漕运船只可直达这里。汇通祠坐朝南，有山门一间，
+								歇山调脊灰筒瓦顶，石券门，棋盘木门两扇，前殿及东西配殿各三间，均为硬山调大脊灰筒瓦顶。后院有二层后罩楼，祠后
+								原有一暗红色的巨石一块，通体花纹如云，叩之如铜。巨石纹路中隐约似有一鸡一狮，人们俗称：“鸡狮石”。1988年9月27日
+								汇通祠竣工。占地1100平方米的汇通祠按原建筑形式恢复修建。内有石狮、石亭、剑碑，假山叠石，错落有致，曲径路道，别
+								具匠心，石壁洞岫，宛自天开。一座小岛重现人间，清水绕岛而过，随着湖水的流逝，仿佛又回到了久远而灿烂辉煌的历史。
+							
+							<h3>恭王府花园</h3>
+								<img class="img-responsive" src="../img/sxh3.jpg" width="240" height="130" />
+							　　位于前海西街的恭王府花园，想当年曾是乾隆宠臣和坤的私宅，后由慈禧赐给了恭亲王亦忻并因此得名恭王府。 　
+							
+							　   恭王府规模宏大，占地6万多平方米，府邸、花园两部分，拥有格式建筑群落30多处，布局讲究、气势非凡。其花园又名锦翠园，
+							园内设计、布局都具有较高的艺术水平。全园以“山”字形假山拱抱，三面堆土叠石为山，中路以房山石堆砌洞壑。立于山顶，居高临
+							下，更可观全园景观。 
+							
+							　　如今，恭王府以其富丽堂皇、幽深秀丽，已是名扬四海，吸引着远近宾客。
+							</div>
+						</div>
+					</div>
+					
+					<div class="tab-pane fade in" id="a4">
+						<div class="col-sm-12">
+							<div id="grad1">
+								<h3>1.历史文化</h3>
+								<span>八大</span>关是首批中国历史文化名街，也是青岛的主要名胜之一，位于该市
+								
+								市南区海滨，西到第一海滨浴场，东到第三海滨浴场。该地区包括超过8条以“关”命名的街道，其间布满众多的欧式古典建筑，
+								少数建于德国统治时期（1897年——1914年），绝大部分兴建于1930年代。此处与通常的中国城市风貌大异其趣，到处是大片的
+								草坪，行人稀少。此区的居民中有不少是退休的党政军官员。
+								
+								八大关地区背山面海，树木茂密，在德国占领时期为狩猎区。这里的第一座建筑——花石楼则位于八大关太平角的第二海滨浴场，
+								最初是德国总督的夏季狩猎别墅，建于1906年，中世纪城堡式样。
+								
+								清朝末年，此地隶属于即墨仁化乡文峰社的地界，20世纪初，德国占领青岛后，将此地划为德人居住区。
+								
+								1931年——1937年，沈鸿烈担任青岛市长期间，将荣成路以东，北到湛山大路、南到太平湾的近千亩区域规划为“荣成路东特别规
+								定建筑地”，要求建筑密度必须在50%以下，保护绿地，以及必须采用透空围墙等等。这一地区修筑了大约10条道路，均以中国
+								古代军事关隘命名，包括纵向连接香港西路的紫荆关路、宁武关路和韶关路，以及横向交织的武胜关路、嘉峪关路、函谷关路
+								、正阳关路、临淮关路、居庸关路和山海关路，俗称为八大关。在这片区域中，有200多栋建筑，包括了俄国、英国、法国、德
+								国、美国、日本和丹麦等20多个国家的建筑风格，被誉为“万国建筑博物馆”。这些不同的道路上有着不同的树木，例如春天韶
+								关路的盛开的碧桃，夏天正阳关路怒放的紫薇，秋天居庸关路金黄的银杏，这里一直都是游人如织之所。
+								
+								八大关是中国最大的婚礼摄影中心之一。几乎每天都有数十对新婚夫妇在该区的海滨和绿地上留影。
+								
+								<h3>2.建筑风格</h3>
+								<span>“八</span>大关”的建筑造型独特，汇聚了众多的各国建筑风格，故有“万国建筑博览会”之称。这里集中了俄、英、法、德、美、丹麦
+								、希腊、西班牙、瑞士、日本等20多个国家的各式建筑风格。西部是线条明快的美国式建筑“东海饭店”；靠近第二海水浴场，
+								是解放后新建的汇泉小礼堂，采用青岛特产的花岗岩建造，色彩雅致，造型庄重美观；再加上一幢幢别具匠心的小别墅，使八
+								大关有了“万国建筑博览会”的美誉。风格多样的建筑使这里成为电影外景的最佳选择，如《家务清官》、《苗苗》、《13号魔
+								窟》等40多部电影和20多部电视剧都在此拍摄，很多歌星的MTV外景也选在这里，比如叶倩文、林子祥的《选择》、《重逢》就
+								是在八大关拍的外景。位置：位于汇泉角景区北部，西临汇泉湾，南接太平湾。
+								
+								面积：70余公顷。八大关是以8条关隘命名的路而得来的，即韶关路、嘉峪关路、函谷关路、正阳关路、临淮关路、宁武关路、
+								紫荆关路、居庸关路（现已增为十条路，另两条为武胜关路、山海关路）。各条马路纵横交错，形成一个方圆数里的风景区。
+								
+							
+								
+								<h3>3.主要景点</h3>
+								<h4>花石楼</h4>
+								
+								<span>花石</span>楼，黄海路18号，1932年由一位俄罗斯人格拉西莫夫修建，由于是用花岗岩和鹅卵石建成，故得名花石楼。为欧洲古城堡
+								式风格，有古罗马哥特建筑的遗风，室内有巴洛克、洛克克的痕迹。是八大关中最著名也是最有代表性的一栋别墅，如果按近
+								代欧式建筑传统模式去套它，好像并不十分贴切。此楼建筑面积753.7平方米，院内面积4.5亩。楼的主体共5层，顶层为观海
+								台。 解放前国民党特务头子戴笠曾在此住过。相传蒋介石曾在这里避过难居住过。解放后，花石楼成为接待中外贵宾的馆舍
+								，董必武、陈毅等党和国家领导人都曾在此下榻。
+								
+								
+								第二海水浴场，位于汇泉湾东侧的太平湾内。德占青岛之初，德国总督常骑马到此狩猎，下海游泳，以后辟为海水浴场。中国
+								政府收回青岛后定名为第二海水浴场，因地处太平湾，又称太平角海水浴场。浴场东面的这个小凉棚，木栏、木柱、瓦顶，似
+								有不合时代之拍的感觉。
+								
+								<h4>山海关路1号</h4>
+								
+								<span>文艺</span>复兴风格别墅式，建于1933年，刘耀宸、俄拉夫林且夫设计。瑞典瑞中友好协会主席米尔达，叶剑英元帅、粟裕大将和艺
+								术大师刘海粟等先后在此下榻。
+								
+								<h4>元帅楼</h4>
+								
+								<span>山海</span>关路十七号，它是一座日本式建筑，1940年由在青岛的日本人所建，楼内设有四个房间，其中一个日式套间的墙壁上镶挂
+								着一块樱花木，据日本人考证，该樱花木有上千年的树龄，十分罕见。在巨额座楼有个别称叫“元帅楼”，因为中华人民共和国
+								十大元帅的徐向前、彭德怀等6位元帅曾在该楼居住。
+								
+								<h4>八大关小礼堂</h4>
+								
+								<span>接下</span>来我们看到的是“八大关小礼堂”，它是八大关宾馆最重要的组成部分，始建于1959年，是一幢具有浓厚民族特色的厅堂建
+								筑。这一幢建筑的工程代号为“505工程”，计划 建成国际会议中心。1962年，因为政治和经济等方面的原因，仅建成了地上，
+								地下各一层的建筑，从而形成了这一独具特色的建筑外貌。
+								
+								
+								<h4>公主楼</h4>
+								
+								<span>位于</span>居庸关路10号 它是一座典型的丹麦建筑，始建于二十世纪三十年代，整个建筑造型别致，风格独特。
+								
+								关于公主楼的来历，还有一段美丽的故事。据说在1929年，有一位丹麦王国的王子乘坐“菲欧尼亚”号豪华游轮来到青岛游览观
+								光。他被八大观美丽的海滨风光所吸引。丹麦王子遂委托首任丹麦领事在八大观海滨购置土地，按照安徒生童话中的意境设计
+								了这座丹麦古典式建筑，准备将其作为礼物送给丹麦公主。虽然丹麦公主最终没有来青岛，但“公主楼”的名字却不胫而走，广
+								为传播。
+								
+								<h4>钓鱼台</h4>
+								
+								<span>山海</span>关路9号，美式建筑，美七舰队将军柯克上将的宅邸，美国西太平洋舰队司令白吉尔在此居住。这里接待的宾客大都是外
+								国的国家元首和政府领导人，解放后，我们国家党和政府领导人刘少奇、周恩来、邓小平、叶剑英、江泽民、李鹏、朱镕基等
+								都曾在此下榻。
+								</div>
+						</div>
+					</div>
+					
+					<div class="tab-pane fade in" id="a5" style="margin-bottom:50px;">
+						<div class="col-sm-12">
+							<div class="div1"></div>
+							<div class="div2">
+							<p>中国现代文学巨擘叶圣陶先生曾说：“倘若要我说说总的印象，我觉得苏州园林是中国各地园林的标本，各地园林或多或少都受
+							到苏州园林的影响。因此谁如果要鉴赏中国的园林，苏州园林就不该错过。”</p>
+							
+							<p>单以园林来看，无论是数量学是质量，苏州都是首屈一指。不仅如此，老城区还比较完整地保存着古代的城市建制，这点在当代
+							中国普遍一刀切的城市建筑格局中尤为突出。无论是城市建制，还是园林设计，苏州处处都体现出了“天人合一”的理念，人居与
+							自然竟似毫无雕琢地整合在了一起。</p>
+							<p>因此，在“选美中国”活动的评选中，苏州老城微弱差距屈居鼓浪屿之后，列城区类第二名，这算是名副其实了。</p>
+							<p>
+							古城苏州，西临太湖，北枕长江，春秋时期就是吴国的都城，历史上曾经有“上有天堂，下有苏杭”的美誉。苏州古城区至今仍落
+							在原址上，基本保持着古代“水陆并行，河街相邻”的双棋盘格局和“小桥流水、粉墙黛瓦、史迹名园”的独特风貌。</p>
+							<p>
+							35千米的河道在苏州古城区蜿蜒穿行，河上架着1153座桥，在这河与桥的环绕中，还有69座古典园林，著名的有拙政园、留园、
+							沧浪亭、狮子林等。苏州园林造诣之高，世无伦比，小桥流水、茂林修竹、奇石假山、画栋雕梁……所有这一切，代表着昔日中国
+							人的生活理想，体现着人的“诗意的栖居”，它向我们诠释了人应该生活在一个什么样的世界。</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				
+				
+			</div>
+			
+		</div>
+		
+		<script type="text/javascript">
+			var vm = new Vue({
+				el:"#root",
+				data:{
+					
+				}
+			})
+		</script>
+	</body>
+</html>

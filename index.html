@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>最美旅行</title>
+		<link rel="stylesheet" type="text/css" href="icon/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery.animations.min.js"></script>
+	    <script src="js/jquery.animations-tile.js"></script>
+		<script src="js/app.js"></script>
+		<style type="text/css">
+			body{
+				padding-top: 50px;
+				/*background:url('../img/bj22.jpg');*/
+				background-size:100%;
+			}
+			.nav1{
+				padding-top: 50px;
+			}
+			.img{
+				display: inline-block;
+				border: 1px solid blanchedalmond;
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				border-radius: 20px; 
+			}
+			/*导航部分*/
+			.nav{
+				margin: 10px;
+			}
+			.navbar-default{
+				background-color: #d4dff5;
+				font: "楷体";
+				font-size: 16px;
+			}
+			.navbar-header img{
+				margin-right: 20px;
+				margin-top: 10px;
+				
+			}
+			.navbar-brand{
+				padding-top: 3px;
+				
+			}
+			.navbar-nav>li{
+				margin-left: 40px;
+			}
+			
+			.fa-heart-o:hover:before {
+				color: red;
+			  	content: "\f004";
+			}
+			.navbar-nav>li:hover{
+				color: red;
+			}
+			.bod{
+			     cursor: pointer;
+				 border:0px solid #fff;
+			     border-radius: 0;
+			     color: #ccc;
+			}
+			.bod:hover{
+			    cursor: pointer;
+			    border:0px solid #fff;
+			    border-bottom: 3px solid #ff0000;
+			    border-radius: 0;
+			    color: #000;
+			    font-weight: 400;
+			}
+			/*图片部分*/
+			.hd{
+				height: 350px;
+				overflow: hidden;
+			}
+			/*.scroll-container{
+					padding-top: 50px;
+				     width: 1000px;
+				    height: 380px;
+				    overflow: hidden;
+				}
+			ul li  {
+				float:left;
+				list-style:none;
+    			
+				}
+			.div1{
+					width:100%;
+				}*/
+			.img{
+				border: 1px solid blanchedalmond;
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				border-radius: 20px; 
+			}
+			#image{
+					display:block;
+					margin:0 auto;
+				}
+			.distance{
+					padding-top: 20px;
+					padding-bottom: 20px;
+				}
+			
+			/*页脚*/
+			.foot{
+				line-height: 30px;
+				background-color: #302ea42b;
+			}
+			/*页脚*/
+			.foot1{
+				width: 100%;
+				height: 80px;
+				float: left;
+				margin-top: 100px;
+				background-color: rgba(66,74,79,1);
+			}
+			.design-foot{
+				color: #313131;
+				margin: 0 auto;
+				overflow: visible !important;
+				font-size: 14px;
+				text-align: center;
+			}
+			.c-copyright{
+				text-align: center;
+				margin-top: 22px;
+				color: #fff;
+				
+			}
+			.c-copyright p{
+				margin-top: 5px;
+				color: #fff;
+				font-size: 14px;
+			}
+			@media only screen and (min-width: 992px) and (max-width: 1200px) {
+				.hd{
+				height: 250px;
+				overflow: hidden;
+			}
+			.nav1{
+				padding-top: 170px;
+			}
+			}
+			@media only screen and (min-width: 768px) and (max-width: 992px) {
+				.hd{
+				height: 210px;
+				overflow: hidden;
+			}
+			.nav1{
+				padding-top: 170px;
+			}
+			}
+			@media only screen and (min-width: 100px) and (max-width:768px) {
+				.hd{
+				height: 350px;
+				overflow: hidden;
+			}
+			.nav1{
+				padding-top:50px;
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="root">
+			<!--导航部分-->
+			<nav class="navbar navbar-default navbar-fixed-top posi">
+				<div class="container-fluid">
+					<div class="container">	
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#c1">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a href="yy.html" class="navbar-brand"><img class="img-responsive" src="img/logo.png" width="30"></a> 
+						</div>
+						<div class="collapse navbar-collapse" id="c1">
+							<ul class="nav navbar-nav posi">
+								<li class="bod"><a href="index.html"><i class="fa fa-home"></i>首页</a></li>
+								<li class="bod"><a href="html/guzhen.html"><i class="fa fa-heart-o" ></i> 中国最美六大乡村古镇</a></li>
+								<li class="bod"><a href="html/shamo.html"><i class="fa fa-heart-o"></i> 中国最美五大沙漠</a></li>
+								<li class="bod"><a href="html/dongxue.html"><i class="fa fa-heart-o"></i> 中国最美六大洞穴</a></li>
+								<li class="bod"><a href="html/chengqu.html"><i class="fa fa-heart-o"></i> 中国最美五大城区</a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+			
+			<!--图片部分-->
+			<div class="container nav1">
+				<div class="col-sm-12 hd " id="slider">
+					<div class="col-sm-6">
+						<img class="img img-responsive" src="img/am.jpg"  title="澳门历史城区" style="width: 100%; height: 350;"/>
+					</div>
+					<div class="col-sm-6">
+						<img class="img img-responsive" src="img/am1.jpg"   title="澳门历史城区" style="width: 100%;height: 350;"/>
+					</div>
+					<div class="col-sm-6">
+						<img class="img img-responsive" src="img/bd4.jpg"  title="丹巴藏赛" style="width: 100%;height: 350;"/>
+					</div>
+					<div class="col-sm-6">
+						<img class="img img-responsive" src="img/dbzs1.jpg"   title="丹巴藏赛" style="width: 100%;height: 350;"/>
+					</div>
+					<div class="col-sm-6">
+						<img class="img img-responsive" src="img/dongxue6.jpg"  title="澳门历史城区" style="width: 100%;height: 350;"/>
+					</div>
+					<div class="col-sm-6">
+						<img class="img img-responsive" src="img/gly1.jpg"   title="鼓浪屿" style="width: 100%;height: 350;"/>
+					</div>
+				</div>
+				
+				<br />
+				<div class="col-sm-12 distance">
+					<img id="image" src="img/lvyou2.jpg" class="img img-responsive" style="width: 100%;">
+				</div>
+			</div>
+			
+			<div class="container">
+				<div class="col-sm-12 foot" align="middle">
+					<a href="grxx.html" style="text-decoration: none;"> 个人信息<br></a>
+			   		<marquee><a href="html/yy.html" style="text-decoration: none;">在线预约</a></marquee>
+				</div>
+			</div>
+			<div class="foot1">
+				<div class="design-foot">
+					<div class="c-copyright">
+						Copyright @ 2019 李女士
+						<br />
+						<p>If you are interesting tourist, please contact me！</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<script type="text/javascript">
+			var vm = new Vue({
+				el:"#root",
+				data:{
+					
+				}
+			})
+			
+			//图片散拼
+			$('#image').animate('tile', {
+			"effect": "fadeIn",
+			"sequent": true,
+			"adjustDuration": true
+			});
+			
+			
+			//轮播
+			//                    <!-- 计数幻灯片 -->
+			var count=1;
+			//                    <!--获取总数-->
+			function scroll_news(){
+			//                        图片切换
+			    var firstNode = $('#slider div'); //获取li对象
+			    firstNode.eq(0).fadeOut("slow", function(){ //获取li的第一个,执行fadeOut,并且call - function.
+			        //计数
+			        if(count==6){
+			            count=1;
+			        }else {
+			            count++;
+			        }
+			         $("#instruction").html(count)
+			//                            图片切换
+			        $(this).clone().appendTo($(this).parent()).show(); //把每次的li的第一个 克隆，然后添加到父节点 对象。
+			        $(this).remove();//最后  把每次的li的第一个 去掉。
+			    });//注意哦,这些都是在fadeOut里面的callback函数理执行的。
+			}
+			setInterval('scroll_news()',3000);//每隔0.5秒，执行scroll_news()
+		</script>
+	</body>
+</html>
